@@ -95,16 +95,16 @@
                     <div class="booking-box border">
                         <h4 class="fw-bold mb-3">Travel Booking Form</h4>
 
-                        <form>
+                        <form action="booking.php" method="POST">
 
                             <div class="mb-3">
                                 <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" placeholder="Enter your name" name="Full_Name" required>
+                                <input type="text" class="form-control" placeholder="Enter your name" name="Full_Name" maxlength="100" >
                             </div>
 
                             <div class="mb-3">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Enter email" name="Email" required>
+                                <input type="email" class="form-control" placeholder="Enter email" name="Email" maxlength="100" required>
                             </div>
 
                             <div class="mb-3">
@@ -114,7 +114,6 @@
                                     <option>Tokyo</option>
                                     <option>Kyoto</option>
                                     <option>Osaka</option>
-                                    <option>Hokkaido</option>
                                     <option>Mount Fuji</option>
                                 </select>
                             </div>
@@ -142,7 +141,7 @@
 
                         <div class="col-md-6 mb-4">
                             <div class="card destination-card">
-                                <img src="https://images.unsplash.com/photo-1540959375944-7049f642e9f1?w=600" class="card-img-top" alt="Tokyo">
+                                <img src="tokyo_tower.jpg" class="card-img-top" alt="Tokyo">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Tokyo</h5>
                                     <p class="card-text">Japan’s electric capital full of culture, food, and neon lights.</p>
@@ -153,7 +152,7 @@
 
                         <div class="col-md-6 mb-4">
                             <div class="card destination-card">
-                                <img src="https://images.unsplash.com/photo-1522383150241-33e15c58e3c0?w=600" class="card-img-top" alt="Kyoto">
+                                <img src="kyoto_castle.jpg" class="card-img-top" alt="Kyoto">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Kyoto</h5>
                                     <p class="card-text">Temples, shrines, and peaceful scenery rich in tradition.</p>
@@ -164,7 +163,7 @@
 
                         <div class="col-md-6 mb-4">
                             <div class="card destination-card">
-                                <img src="https://images.unsplash.com/photo-1594050064967-dabaf26a1acd?w=600" class="card-img-top" alt="Osaka">
+                                <img src="osaka.webp" class="card-img-top" alt="Osaka">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Osaka</h5>
                                     <p class="card-text">Famous for street food, markets, and lively night scenes.</p>
@@ -175,7 +174,7 @@
 
                         <div class="col-md-6 mb-4">
                             <div class="card destination-card">
-                                <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600" class="card-img-top" alt="Mt. Fuji">
+                                <img src="fuji_san.jpg" class="card-img-top" alt="Mt. Fuji">
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">Mount Fuji</h5>
                                     <p class="card-text">Japan's iconic mountain with breathtaking scenery.</p>
